@@ -5,7 +5,9 @@ $(document).ready(function(){
   $('body').bind('cut copy past', function(e){
     e.preventDefault();
   })
-  $("body").on("contextmenu", function(e){
+  $("body").on("contextmenu", "img", function(e){
     return false;
   })
 })
+
+// add on css file ''pointer-events: none''
